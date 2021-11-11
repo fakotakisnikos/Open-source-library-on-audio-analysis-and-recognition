@@ -1,6 +1,6 @@
 # Open Source Library on Audio Analysis and Recognition with Asthma Medication Adherence Monitoring Algorithms: State of the Art
  
-<img src="http://www.vvr.ece.upatras.gr/wp-content/uploads/sites/5/2020/01/UPATGREY21.png" align=mid />
+<img src="http://www.ece.upatras.gr/images/2021/01/26/the-department.jpg" align=mid />
 
 
 # TakeAbreath
