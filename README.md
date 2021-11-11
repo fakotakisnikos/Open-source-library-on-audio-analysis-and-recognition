@@ -1,4 +1,4 @@
-# Open source library on audio analysis and recognition
+# Open Source Library on Audio Analysis and Recognition
  
 <img src="http://www.vvr.ece.upatras.gr/wp-content/uploads/sites/5/2020/01/UPATGREY21.png" align=mid />
 
