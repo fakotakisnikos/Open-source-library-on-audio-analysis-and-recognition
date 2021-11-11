@@ -3,7 +3,7 @@
 <img src="http://www.ece.upatras.gr/images/ENGLISH_VERSION/LOGO/LogoVersionEN.png" align=mid />
 
 
-# TakeAbreath
+# Take a breath
 This repository contains a Python with Tensorflow implementation of [Take a breath: Smart Platform for self-management and support of patients with chronic respiratory diseases](http://www.vvr.ece.upatras.gr/). 
 Many studies have shown that the performance on deep learning is significantly affected by volume of training data. The Take-a-Breath project provides the TaB dataset with inhaler's sounds, respiratory sounds and environmental sounds, to build relatively large deep learning programs. Based on this dataset, a state of the art deployment, on pre-trained machine learning models and corresponding code are provided.
 
@@ -25,58 +25,12 @@ If you use this code or pre-trained models, please cite the following:
 }
 ```
 ### Update(2021/11/11)
-We uploaded 4 pre-trained models based on more datasets (23 datasets).
+We uploaded 10 pre-trained models based on TaB dataset (1 dataset).
 ```
 Model name             : parameters settings
-resnet_10_23dataset.pth: --model resnet --model_depth 10 --resnet_shortcut B
-resnet_18_23dataset.pth: --model resnet --model_depth 18 --resnet_shortcut A
-resnet_34_23dataset.pth: --model resnet --model_depth 34 --resnet_shortcut A
-resnet_50_23dataset.pth: --model resnet --model_depth 50 --resnet_shortcut B
+ 
 ```
-We transferred the above pre-trained models to the multi-class segmentation task (left lung, right lung and background) on Visceral dataset. The results are as follows:
-<table class="dataintable">
-<tr>
-   <th>Network</th>
-   <th>Pretrain</th>
-   <th>LungSeg(Dice)</th>
-</tr>
-<tr>
-   <td rowspan="2">3D-ResNet10</td>
-   <td>Train from scratch</td>
-   <td>69.31%</td>
-</tr>
-<tr>
-    <td>MedicalNet</td>
-    <td>96.56%</td>
-</tr>
-<tr>
-   <td rowspan="2">3D-ResNet18</td>
-   <td>Train from scratch</td>
-   <td>70.89%</td>
-</tr>
-<tr>
-    <td>MedicalNet</td>
-    <td>94.68%</td>
-</tr>
-<tr>
-   <td rowspan="2">3D-ResNet34</td>
-   <td>Train from scratch</td>
-   <td>75.25%</td>
-</tr>
-<tr>
-    <td>MedicalNet</td>
-    <td>94.14%</td>
-</tr>
-<tr>
-   <td rowspan="2">3D-ResNet50</td>
-   <td>Train from scratch</td>
-   <td>52.94%</td>
-</tr>
-<tr>
-    <td>MedicalNet</td>
-    <td>89.25%</td>
-</tr>
-</table>
+ 
 
 
 ### Contents
@@ -88,13 +42,13 @@ We transferred the above pre-trained models to the multi-class segmentation task
 6. [Acknowledgement](#Acknowledgement)
 
 ### Requirements
-- Python 3.7.0
+- Python 3.8.0
 - PyTorch-0.4.1
 - CUDA Version 9.0
 - CUDNN 7.0.5
 
 ### Installation
-- Install Python 3.7.0
+- Install Python 3.8.0
 - pip install -r requirements.txt
 
 
@@ -138,11 +92,11 @@ resnet_200.pth: --model resnet --model_depth 200 --resnet_shortcut B
 ```
 
 - After successfully completing basic installation, you'll be ready to run the demo.
-1. Clone the MedicalNet repository
+1. Clone the TaB repository
 ```
-git clone https://github.com/Tencent/MedicalNet
+git clone https://github.com//
 ```
-2. Download data & pre-trained models ([Google Drive](https://drive.google.com/file/d/13tnSvXY7oDIEloNFiGTsjUIYfS3g3BfG/view?usp=sharing) or [Tencent Weiyun](https://share.weiyun.com/55sZyIx))
+2. Download data & pre-trained models ([Google Drive](https://drive.google.com/file/usp=sharing) or [VVR Group](https://share.vvrgroup.com/55sZyIx))
 
     Unzip and move files
 ```
@@ -309,15 +263,20 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
 - Please refer to [Med3D: Transfer Learning for 3D Medical Image Analysis](https://arxiv.org/abs/1904.00625) for more details：
 
 ### TODO
-- [x] 3D-ResNet series pre-trained models
-- [x] Transfer learning training code
-- [x] Training with multi-gpu
-- [ ] 3D efficient pre-trained models（e.g., 3D-MobileNet, 3D-ShuffleNet）
-- [ ] 2D medical pre-trained models
-- [x] Pre-trained MedicalNet models based on more medical dataset
+- [ ] Decision Trees (2014 app.)
+- [ ] Random Forests
+- [ ] Support Vector Machines
+- [ ] AdaBoost
+- [ ] GradBoost
+- [ ] Hiddel Markov Models
+- [ ] Convolutional Neural Networks
+- [X] LSTM
+- [ ] Linear Discriminant Analysis
+- [ ] Quadratic Discriminant Analysis
+- [ ] Sparse Convolutional Neural Networks
 
 ### Acknowledgement
 We thank [3D-ResNets-PyTorch](https://github.com/kenshohara/3D-ResNets-PyTorch) and [MRBrainS18](https://mrbrains18.isi.uu.nl/) which we build MedicalNet refer to this releasing code and the dataset.
 
 ### Contribution
-If you want to contribute to MedicalNet, be sure to review the [contribution guidelines](https://github.com/Tencent/MedicalNet/blob/master/CONTRIBUTING.md)
+If you want to contribute to VVR Group TaB, be sure to review the [contribution guidelines](https://github.com/tab/CONTRIBUTING.md)
