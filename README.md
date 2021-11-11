@@ -1,6 +1,6 @@
 # Open source library on audio analysis and recognition
  
-<img src="images/logo.png" align=mid />
+<img src="http://www.vvr.ece.upatras.gr/wp-content/uploads/sites/5/2020/01/UPATGREY21.png" align=mid />
 
 
 # TakeAbreath
