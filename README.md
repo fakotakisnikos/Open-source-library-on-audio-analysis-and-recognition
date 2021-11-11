@@ -3,7 +3,7 @@
 <img src="images/logo.png" align=mid />
 
 
-# MedicalNet
+# TakeAbreath
 This repository contains a Python with Tensorflow implementation of [Take a breath: Smart Platform for self-management and support of patients with chronic respiratory diseases](http://www.vvr.ece.upatras.gr/). 
 Many studies have shown that the performance on deep learning is significantly affected by volume of training data. The Take-a-Breath project provides the TaB dataset with inhaler's sounds, respiratory sounds and environmental sounds, to build relatively large deep learning programs. Based on this dataset, a state of the art deployment, on pre-trained machine learning models and corresponding code are provided.
 
