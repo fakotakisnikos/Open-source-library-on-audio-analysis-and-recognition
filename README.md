@@ -65,7 +65,7 @@ MedicalNet/
     |   |--logger.py：Logging script
     |--toy_data/：For CI test
     |--data/：Data storage module
-    |   |--MRBrainS18/：MRBrainS18 dataset
+    |   |--TaB/：TaB dataset
     |	|   |--images/：source image named with patient ID
     |	|   |--labels/：mask named with patient ID
     |   |--train.txt: training data lists
@@ -73,8 +73,8 @@ MedicalNet/
     |--pretrain/：Pre-trained models storage module
     |--model.py: Network processing script
     |--setting.py: Parameter setting script
-    |--train.py: MRBrainS18 training demo script
-    |--test.py: MRBrainS18 testing demo script
+    |--train.py: TaB training demo script
+    |--test.py: TaB testing demo script
     |--requirement.txt: Dependent library list
     |--README.md
 ```
@@ -96,13 +96,13 @@ resnet_200.pth: --model resnet --model_depth 200 --resnet_shortcut B
 ```
 git clone https://github.com//
 ```
-2. Download data & pre-trained models ([Google Drive](https://drive.google.com/file/usp=sharing) or [VVR Group](https://share.vvrgroup.com/55sZyIx))
+2. Download data & pre-trained models ([Google Drive](https://drive.google.com/file/usp=sharing) or [VVR Group Datasets](https://share.vvrgroup.com/55sZyIx))
 
     Unzip and move files
 ```
-mv MedicalNet_pytorch_files.zip MedicalNet/.
-cd MedicalNet
-unzip MedicalNet_pytorch_files.zip
+mv TaB_pytorch_files.zip TakeABreath/.
+cd TakeABreath
+unzip TakeABreath_pytorch_files.zip
 ```
 3. Run the training code (e.g. 3D-ResNet-50)
 ```
@@ -165,14 +165,14 @@ GPU：NVIDIA Tesla P40
 
 - Performance
 ```
-Visualization of the segmentation results of our approach vs. the comparison ones after the same training epochs. 
-It has demonstrated that the efficiency for training convergence and accuracy based on our MedicalNet pre-trained models.
+Visualization of the classification results of our approach vs. the comparison ones after the same training epochs. 
+It has demonstrated that the efficiency for training convergence and accuracy based on our TakeABreath pre-trained models.
 ```
 <img src="images/efficiency.gif" width="812" hegiht="294" align=mid />
 
 
 ```
-Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg) and pulmonary nodule classification (NoduleCls) with Dice and accuracy evaluation metrics, respectively.
+Results of transfer TakeABreath pre-trained models to respiratory sounds classification (TaB) and accuracy evaluation metrics, respectively.
 ```
 <table class="dataintable">
 <tr>
@@ -188,7 +188,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>79.80%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>87.16%</td>
     <td>86.87%</td>
 </tr>
@@ -199,7 +199,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>80.80%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>87.26%</td>
     <td>88.89%</td>
 </tr>
@@ -210,7 +210,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>83.84%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>89.31%</td>
     <td>89.90%</td>
 </tr>
@@ -221,7 +221,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>84.85%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>93.31%</td>
     <td>89.90%</td>
 </tr>
@@ -232,7 +232,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>81.82%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>92.79%</td>
     <td>90.91%</td>
 </tr>
@@ -243,7 +243,7 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>73.74%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>92.33%</td>
     <td>90.91%</td>
 </tr>
@@ -254,13 +254,13 @@ Results of transfer MedicalNet pre-trained models to lung segmentation (LungSeg)
    <td>76.77%</td>
 </tr>
 <tr>
-    <td>MedicalNet</td>
+    <td>TakeABreath</td>
     <td>92.06%</td>
     <td>90.91%</td>
 </tr>
 </table>
 
-- Please refer to [Med3D: Transfer Learning for 3D Medical Image Analysis](https://arxiv.org/abs/1904.00625) for more details：
+- Please refer to [Open Source Library on Audio Analysis and Recognition with Asthma Medication Adherence Monitoring Algorithms: Review Paper](https://5) for more details：
 
 ### TODO
 - [ ] Decision Trees (2014 app.)
