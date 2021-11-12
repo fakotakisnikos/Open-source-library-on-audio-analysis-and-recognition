@@ -90,13 +90,7 @@ MedicalNet/
 - Network structure parameter settings
 ```
 Model name   : parameters settings
-resnet_10.pth: --model resnet --model_depth 10 --resnet_shortcut B
-resnet_18.pth: --model resnet --model_depth 18 --resnet_shortcut A
-resnet_34.pth: --model resnet --model_depth 34 --resnet_shortcut A
-resnet_50.pth: --model resnet --model_depth 50 --resnet_shortcut B
-resnet_101.pth: --model resnet --model_depth 101 --resnet_shortcut B
-resnet_152.pth: --model resnet --model_depth 152 --resnet_shortcut B
-resnet_200.pth: --model resnet --model_depth 200 --resnet_shortcut B
+
 ```
 
 
